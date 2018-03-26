@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "cordova-plugin-dependencies-pin",
+  "cordova_name": "dependencies-pin",
+  "description": "Cordova plugin to ping dependencies versions on android",
+  "license": "MIT",
+  "repo": "https://github.com/B2CMessenger/cordova-plugin-dependencies-pin",
+  "issue": "",
+  "keywords": [],
+  "platforms": [
+    "android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.0.0"
+    }
+  ]
+}

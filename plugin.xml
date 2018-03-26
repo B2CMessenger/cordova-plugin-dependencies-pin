@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-dependencies-pin"
+        version="1.0.1">
+
+    <name>cordova-plugin-dependencies-pin</name>
+    <description>Cordova plugin to ping dependencies versions on android</description>
+    <author>Sanperrier</author>
+
+    <platform name="android">
+        <framework src="cordova-plugin-dependencies-pin.gradle" custom="true" type="gradleReference" />
+    </platform>
+
+</plugin>

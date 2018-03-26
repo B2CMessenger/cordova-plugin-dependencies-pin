@@ -1,0 +1,20 @@
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '27.+'
+            }
+        }
+		
+		if (requested.group == 'com.facebook.android' && requested.name == 'facebook-android-sdk') {
+          if (!requested.name.startsWith("multidex")) {
+            details.useVersion '4.25.+'
+          }
+        }
+		
+		if (requested.group == 'com.google.android.gms' && requested.name.startsWith("play-services")) {
+            details.useVersion '11.+'
+        }
+    }
+}
