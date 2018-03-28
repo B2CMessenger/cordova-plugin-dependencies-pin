@@ -14,7 +14,7 @@ configurations.all {
         }
 		
 		if (requested.group == 'com.google.android.gms' && requested.name.startsWith("play-services")) {
-            details.useVersion '11.+'
+            details.useVersion '11.6.2'
         }
     }
 }
