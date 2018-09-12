@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-dependencies-pin"
-        version="1.0.1">
+        version="1.0.2">
 
     <name>cordova-plugin-dependencies-pin</name>
     <description>Cordova plugin to ping dependencies versions on android</description>
@@ -10,6 +10,7 @@
 
     <platform name="android">
         <framework src="cordova-plugin-dependencies-pin.gradle" custom="true" type="gradleReference" />
+        <hook src="hooks/adjust_project_properties.js" type="after_prepare" />
     </platform>
 
 </plugin>
