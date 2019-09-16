@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-dependencies-pin"
-        version="1.0.2">
+        version="1.0.3">
 
     <name>cordova-plugin-dependencies-pin</name>
     <description>Cordova plugin to ping dependencies versions on android</description>
