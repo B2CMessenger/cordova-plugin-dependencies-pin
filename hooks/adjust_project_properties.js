@@ -14,7 +14,14 @@ module.exports = function (ctx) {
 
     var platformRoot = path.join(ctx.opts.projectRoot, 'platforms/android');
     var propFilePath = path.join(platformRoot, 'project.properties');
-    var deferral = ctx.requireCordovaModule('q').defer();
+    var Q;
+    try {
+        Q = require('q');
+    } catch (e) {
+        Q = context.requireCordovaModule('q');
+    }
+
+    var deferral = new Q.defer();
 
 
     const rl = readline.createInterface({
