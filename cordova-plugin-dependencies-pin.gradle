@@ -6,15 +6,15 @@ configurations.all {
                 details.useVersion '27.1.0'
             }
         }
-		
+
 		if (requested.group == 'com.facebook.android' && requested.name == 'facebook-android-sdk') {
           if (!requested.name.startsWith("multidex")) {
             details.useVersion '4.25.+'
           }
         }
-		
+
 		if (requested.group == 'com.google.android.gms' && requested.name.startsWith("play-services")) {
-            details.useVersion '11.8.0'
+            details.useVersion '+'
         }
     }
 }

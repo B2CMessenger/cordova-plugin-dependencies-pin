@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "cordova-plugin-dependencies-pin",
   "cordova_name": "dependencies-pin",
   "description": "Cordova plugin to ping dependencies versions on android",
